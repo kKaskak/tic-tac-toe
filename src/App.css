@@ -1,0 +1,39 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+	a:nth-of-type(2) .logo {
+		animation: logo-spin infinite 20s linear;
+	}
+}
+
+.square {
+	min-width: 4rem;
+	min-height: 4rem;
+}
+
+.game {
+	display: flex;
+	flex-direction: row;
+}
+
+.game-info > div {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5rem;
+}
+
+.board-row {
+	padding: 1rem;
+	display: flex;
+	gap:  1rem;
+}
+
+.board-row:after {
+	clear: both;
+	content: '';
+	display: table;
+}
