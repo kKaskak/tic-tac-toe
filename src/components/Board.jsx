@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Square from './Square';
-import './App.css';
+import '../index.css';
 
 const Board = ({ xIsNext, squares, onPlay }) => {
 

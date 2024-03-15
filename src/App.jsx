@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Board from './Board';
-import './App.css';
+import Board from './components/Board';
+import './index.css';
 
 const App = () => {
 	const [xIsNext, setxIsNext] = useState(true);

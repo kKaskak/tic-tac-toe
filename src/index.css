@@ -51,6 +51,38 @@ button:hover {
 	border-color: #646cff;
 }
 
+.square {
+	min-width: 4rem;
+	min-height: 4rem;
+}
+
+.game {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-info > div {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5rem;
+}
+
+.board-row {
+	padding: 1rem;
+	display: flex;
+	gap:  1rem;
+}
+
+.board-row:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
 
 @media (prefers-color-scheme: light) {
     :root {
